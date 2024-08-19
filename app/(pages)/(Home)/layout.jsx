@@ -1,10 +1,10 @@
-import Navbar from "@/app/Component/Navbar/Navbar";
+import MainNavbar from "@/app/Component/Navbar/MainNavbar";
 import React from "react";
 
 const HomeLayout = ({ children }) => {
   return (
     <div>
-      <Navbar />
+      <MainNavbar />
       {children}
     </div>
   );
