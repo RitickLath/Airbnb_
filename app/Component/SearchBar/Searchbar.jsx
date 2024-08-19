@@ -47,7 +47,7 @@ const Searchbar = () => {
           className={inputStyles}
           selected={endDate}
           onChange={(date) => setEndDate(date)}
-          placeholderText="Add dates"
+          placeholder="Add dates"
         />
       </div>
 

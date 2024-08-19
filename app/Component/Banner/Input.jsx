@@ -45,7 +45,7 @@ const Input = () => {
           type="date"
           className={inputBaseStyles}
           selected={endDate}
-          placeholderText="Add Date"
+          placeholder="Add Date"
           onChange={(date) => setEndDate(date)}
         />
       </div>
