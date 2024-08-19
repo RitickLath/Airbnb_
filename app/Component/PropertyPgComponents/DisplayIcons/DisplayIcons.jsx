@@ -76,7 +76,7 @@ const propertyCategories = [
 
 const DisplayIcons = () => {
   return (
-    <div className="mt-3 flex space-x-12 overflow-x-scroll overflow-y-hidden small-scrollbar">
+    <div className="mt-3 flex space-x-6 lg:space-x-10 overflow-x-scroll overflow-y-hidden small-scrollbar">
       {propertyCategories.map((item, index) => (
         <IconsCard key={index} icon={item.icon} title={item.title} />
       ))}
