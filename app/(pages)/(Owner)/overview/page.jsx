@@ -1,5 +1,5 @@
 import HostNavbar from "@/app/Component/Navbar/HostNavbar";
-import GettingStarted from "@/app/Component/Overview/GettingStarted";
+import GettingStarted from "@/app/Component/HostPgComponents/Overview/GettingStarted";
 import React from "react";
 
 const Overview = () => {

@@ -1,10 +1,10 @@
-import Banner from "@/app/Component/Banner/Banner";
-import Categories from "@/app/Component/Categories/Categories";
-import Display from "@/app/Component/Display/Display";
-import FAQs from "@/app/Component/FAQs/FAQs";
-import Feature from "@/app/Component/Feature/Feature";
-import Footer from "@/app/Component/Footer/Footer";
-import Searchbar from "@/app/Component/SearchBar/Searchbar";
+import Banner from "@/app/Component/HomePgComponents/Banner/Banner";
+import Categories from "@/app/Component/HomePgComponents/Categories/Categories";
+import Display from "@/app/Component/HomePgComponents/Display/Display";
+import FAQs from "@/app/Component/HomePgComponents/FAQs/FAQs";
+import Feature from "@/app/Component/HomePgComponents/Feature/Feature";
+import Footer from "@/app/Component/HomePgComponents/Footer/Footer";
+import Searchbar from "@/app/Component/HomePgComponents/SearchBar/Searchbar";
 import React from "react";
 
 const Home = () => {

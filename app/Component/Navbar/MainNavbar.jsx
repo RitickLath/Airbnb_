@@ -21,18 +21,20 @@ const MainNavbar = () => {
     <div className={navbarContainer}>
       {/* LEFT */}
       <div>
-        <Image
-          alt="banner"
-          src="/Image/logo.png"
-          width={120}
-          height={40}
-          className="w-[120px] h-10"
-        />
+        <Link href="/">
+          <Image
+            alt="banner"
+            src="/Image/logo.png"
+            width={120}
+            height={40}
+            className="w-[120px] h-10"
+          />
+        </Link>
       </div>
 
       {/* MIDDLE */}
       <div className={centerLinksContainer}>
-        <Link className={linkStyle} href="/">
+        <Link className={linkStyle} href="/property">
           Stays
         </Link>
         <Link className={linkStyle} href="/">
