@@ -3,11 +3,11 @@ import DisplayCard from "./DisplayCard";
 
 const Display = () => {
   return (
-    <div className="px-12 lg:px-20">
+    <div className="px-6 lg:px-20">
       <h1 className="font-semibold text-2xl lg:text-3xl mb-4">
         Big, small, we have it all
       </h1>
-      <div className="lg:flex justify-between w-[80%] lg:w-full">
+      <div className="lg:flex justify-between sm:w-[80%] lg:w-full">
         <DisplayCard
           image="/Image/house.jpg"
           title="Houses >"

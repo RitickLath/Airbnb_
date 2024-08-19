@@ -13,7 +13,7 @@ import { BsFillCameraVideoFill } from "react-icons/bs";
 import { RiHotelBedFill } from "react-icons/ri";
 
 // Define style constants
-const containerStyles = "px-12 lg:px-20 mt-10 py-10 bg-[#F7F7F7]";
+const containerStyles = "px-6 lg:px-20 mt-10 py-10 bg-[#F7F7F7]";
 const headingStyles = "text-xl font-semibold mb-2";
 const subheadingStyles = "mb-4 text-gray-600";
 const gridContainerStyles =

@@ -4,7 +4,7 @@ import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { FaHouseDamage } from "react-icons/fa";
 import { HiAdjustmentsHorizontal } from "react-icons/hi2";
 
-const topDivStyle = "w-full px-12 lg:px-20 lg:flex justify-between my-20";
+const topDivStyle = "w-full px-6 lg:px-20 lg:flex justify-between my-20";
 
 const Feature = () => {
   return (

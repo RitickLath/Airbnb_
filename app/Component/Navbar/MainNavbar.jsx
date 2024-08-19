@@ -6,7 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 // CSS Class Names
 const navbarContainer =
-  "w-full flex justify-between bg-red-100 shadow-lg px-8 py-4";
+  "w-full flex justify-between bg-red-100 shadow-lg px-6 py-4";
 
 const centerLinksContainer = "hidden lg:flex items-center space-x-4";
 const linkStyle = "hover:bg-gray-100 rounded-full px-3 py-2";
@@ -43,7 +43,7 @@ const MainNavbar = () => {
       {/* RIGHT */}
       <div className={rightContainer}>
         <Link className={linkStyle} href="/overview">
-          Airbnb your home
+          Airbnb it!
         </Link>
         <div className={userMenuContainer}>
           <FaRegUserCircle className="font-bold" />

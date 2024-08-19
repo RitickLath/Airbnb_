@@ -5,7 +5,7 @@ import { faqs } from "@/app/Constants/FAQ";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 // Style constants
-const containerStyles = "px-12 lg:px-20 p-4 lg:flex justify-between mt-10";
+const containerStyles = "px-6 lg:px-20 p-4 lg:flex justify-between mt-10";
 const headingStyles = "text-4xl lg:text-5xl font-bold lg:w-[60%] lg:-mt-4 mb-4";
 const faqContainerStyles = "lg:w-[70%]";
 const faqItemStyles = "border-b border-gray-300 py-4";

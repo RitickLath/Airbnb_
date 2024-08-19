@@ -3,7 +3,7 @@ import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
 
 // Define style constants
 const footerContainer =
-  "flex justify-between px-12 lg:px-20 py-6 border mt-10 bg-gray-100";
+  "flex justify-between px-6 lg:px-20 py-6 border mt-10 bg-gray-100";
 const linkContainer = "flex space-x-4 text-sm";
 const linkItem = "cursor-pointer";
 const iconContainer = "hidden md:flex text-xl space-x-5";
@@ -23,7 +23,6 @@ const Footer = () => {
         <FaFacebookSquare />
         <FaInstagram />
         <FaTwitter />
-        
       </div>
     </div>
   );

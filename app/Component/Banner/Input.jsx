@@ -3,12 +3,12 @@
 import React, { useState } from "react";
 
 // Style constants
-const inputBaseStyles = "outline-none mt-1 rounded-md bg-transparent";
+const inputBaseStyles = "w-full outline-none mt-1 rounded-md bg-transparent";
 const containerStyles =
   "w-full lg:w-[450px] mt-4 lg:mt-0 border-[1px] p-4 rounded-lg shadow-lg bg-white z-100";
 const headerTextStyles = "font-bold text-xl md:text-2xl lg:text-3xl";
 const subheaderTextStyles = "pr-6 my-2";
-const sectionStyles = "py-2 border-[1px] px-4 rounded-md mb-2";
+const sectionStyles = "py-2 border-[1px] px-4 rounded-md mb-2 w-full";
 const labelTextStyles = "font-semibold text-sm";
 const buttonStyles =
   "w-full text-center mt-4 py-2 bg-[#E51861] rounded-md text-white font-semibold text-lg";
@@ -26,7 +26,11 @@ const Input = () => {
 
       <div className={sectionStyles}>
         <h1 className={labelTextStyles}>LOCATION</h1>
-        <input type="text" placeholder="Anywhere" />
+        <input
+          className="w-full outline-none"
+          type="text"
+          placeholder="Anywhere"
+        />
       </div>
 
       <div className={sectionStyles}>
