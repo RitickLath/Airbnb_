@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -40,6 +42,13 @@ const MainNavbar = () => {
         <Link className={linkStyle} href="/">
           Experience
         </Link>
+
+        <button className={linkStyle} onClick={() => signIn()}>
+          Signin
+        </button>
+        <button className={linkStyle} onClick={() => signOut()}>
+          Sign out
+        </button>
       </div>
 
       {/* RIGHT */}
