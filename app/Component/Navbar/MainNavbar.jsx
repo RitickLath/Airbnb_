@@ -43,12 +43,8 @@ const MainNavbar = () => {
           Experience
         </Link>
 
-        <button className={linkStyle} onClick={() => signIn()}>
-          Signin
-        </button>
-        <button className={linkStyle} onClick={() => signOut()}>
-          Sign out
-        </button>
+        <button className={linkStyle}>Signin</button>
+        <button className={linkStyle}>Sign out</button>
       </div>
 
       {/* RIGHT */}
