@@ -9,7 +9,7 @@ const styles = {
   buttonContainer: "flex justify-between px-6 lg:px-16 mt-6",
   backButton: "text-lg",
   button: "text-lg px-8 py-2 text-white bg-black rounded-md",
-  box: "w-[300px] h-[100px] lg:w-[530px] lg:h-[100px] p-4 border-[1.7px] rounded-md hover:border-black cursor-pointer mb-4",
+  box: "w-[350px] lg:w-[530px] lg:h-[100px] p-4 border-[1.7px] rounded-md hover:border-black cursor-pointer mb-4",
   boxTitle: "text-lg font-semibold",
   boxDesc: "text-gray-400",
 };
