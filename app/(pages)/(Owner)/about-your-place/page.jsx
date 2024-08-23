@@ -10,7 +10,8 @@ const styles = {
   stepTitle: "text-lg font-semibold mb-3",
   mainTitle: "text-2xl md:text-3xl font-bold mb-3",
   description: "text-lg",
-  imageContainer: "flex justify-center md:justify-start",
+  imageContainer2: " hidden sm:flex justify-center md:justify-start",
+  imageContainer1: "flex justify-center md:hidden",
   image: "w-[80%] min-w-[420px] max-w-[700px]",
   buttonContainer: "flex justify-between px-6 lg:px-16 mt-4 mb-6",
   button: "text-lg px-8 py-2 text-white bg-black rounded-md",
@@ -22,7 +23,18 @@ const Step1 = () => {
     <div>
       {/* Container for content and image */}
       <div className={styles.container}>
+        {/* Image */}
+        <div className={styles.imageContainer1}>
+          <Image
+            src="/Image/step1.jpeg"
+            width={300}
+            height={300}
+            className={styles.image}
+          />
+        </div>
+
         {/* Text Content */}
+
         <div className={styles.textContainer}>
           <h4 className={styles.stepTitle}>Step-1</h4>
           <h1 className={styles.mainTitle}>Tell us about your place</h1>
@@ -34,7 +46,7 @@ const Step1 = () => {
         </div>
 
         {/* Image */}
-        <div className={styles.imageContainer}>
+        <div className={styles.imageContainer2}>
           <Image
             src="/Image/step1.jpeg"
             width={300}
