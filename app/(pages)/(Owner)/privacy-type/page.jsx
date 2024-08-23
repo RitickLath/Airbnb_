@@ -3,7 +3,8 @@ import Link from "next/link";
 
 // Style Constants
 const styles = {
-  container: "mx-auto pt-10 px-6 flex flex-col justify-center items-center",
+  container:
+    "h-min-screen mx-auto pt-10 px-6 flex flex-col justify-center items-center",
   title: "text-2xl lg:text-3xl font-bold text-center",
   boxContainer: "mt-10",
   buttonContainer: "flex justify-between px-6 lg:px-16 mt-6",
