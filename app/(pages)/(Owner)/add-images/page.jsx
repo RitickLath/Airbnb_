@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 const AddImages = () => {
@@ -26,6 +27,19 @@ const AddImages = () => {
             />
           </div>
         </div>
+      </div>
+
+      <div className="flex justify-between px-6 lg:px-16 mt-6 mb-6 w-full">
+        <Link href="/amenities">
+          <button className="text-lg text-gray-700 hover:underline">
+            Back
+          </button>
+        </Link>
+        <Link href="/add-title">
+          <button className="text-lg px-8 py-2 text-white bg-black rounded-md hover:bg-gray-800 transition-colors duration-200">
+            Next
+          </button>
+        </Link>
       </div>
     </div>
   );
