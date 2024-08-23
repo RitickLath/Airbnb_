@@ -1,5 +1,5 @@
 import Banner from "@/app/Component/HomePgComponents/Banner/Banner";
-import Categories from "@/app/Component/HomePgComponents/Categories/Categories";
+import Facilities from "@/app/Component/HomePgComponents/Facilities/Facilities";
 import Display from "@/app/Component/HomePgComponents/Display/Display";
 import FAQs from "@/app/Component/HomePgComponents/FAQs/FAQs";
 import Feature from "@/app/Component/HomePgComponents/Feature/Feature";
@@ -14,7 +14,7 @@ const Home = () => {
       <Banner />
       <Feature />
       <Display />
-      <Categories />
+      <Facilities />
       <FAQs />
       <Footer />
     </div>

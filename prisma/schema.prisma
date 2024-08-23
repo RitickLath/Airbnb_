@@ -57,9 +57,11 @@ model Property {
   pricePerNight Float
   cleaningFee   Float
   ServiceFee    Float
+
   category      String[]
   tags          String[]
   facilities    String[]
+  
   images       String[]
   
   address      String

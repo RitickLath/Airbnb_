@@ -1,5 +1,4 @@
 import React from "react";
-import CategoriesCard from "./CategoriesCard";
 
 import { MdOutlinePool } from "react-icons/md";
 import { MdLocalParking } from "react-icons/md";
@@ -11,6 +10,7 @@ import { GiBarbecue } from "react-icons/gi";
 import { FaMountain } from "react-icons/fa";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 import { RiHotelBedFill } from "react-icons/ri";
+import FacilitiesCard from "./FacilitiesCard";
 
 // Define style constants
 const containerStyles = "px-6 lg:px-20 mt-10 py-10 bg-[#F7F7F7]";
@@ -19,7 +19,7 @@ const subheadingStyles = "mb-4 text-gray-600";
 const gridContainerStyles =
   "grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4";
 
-const categories = [
+const facilities = [
   { icon: <MdOutlinePool />, title: "Pool >" },
   { icon: <MdLocalParking />, title: "Parking >" },
   { icon: <PiWashingMachine />, title: "Washing Machine >" },
@@ -27,12 +27,12 @@ const categories = [
   { icon: <GiFireplace />, title: "Fireplace >" },
   { icon: <PiTelevisionFill />, title: "TV >" },
   { icon: <GiBarbecue />, title: "Barbecue >" },
-  { icon: <FaMountain />, title: "Mountain View >" },
+  { icon: <FaMountain />, title: "Wifi >" },
   { icon: <BsFillCameraVideoFill />, title: "Cinema Room >" },
   { icon: <RiHotelBedFill />, title: "Luxury Bedding >" },
 ];
 
-const Categories = () => {
+const Facilities = () => {
   return (
     <div className={containerStyles}>
       <h1 className={headingStyles}>
@@ -43,8 +43,8 @@ const Categories = () => {
         stay.
       </h2>
       <div className={gridContainerStyles}>
-        {categories.map((category, index) => (
-          <CategoriesCard
+        {facilities.map((category, index) => (
+          <FacilitiesCard
             key={index}
             icon={category.icon}
             title={category.title}
@@ -55,4 +55,4 @@ const Categories = () => {
   );
 };
 
-export default Categories;
+export default Facilities;

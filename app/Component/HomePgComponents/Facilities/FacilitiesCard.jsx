@@ -8,7 +8,7 @@ const cardStyles =
   "bg-white cursor-pointer px-4 py-5 flex space-x-4 items-center rounded-md font-semibold border border-[#F7F7F7] hover:shadow-lg transition-shadow duration-300 hover:border-[1.3px] hover:border-black";
 const iconStyles = "text-xl";
 
-const CategoriesCard = ({ icon, title }) => {
+const FacilitiesCard = ({ icon, title }) => {
   return (
     <div className={cardStyles}>
       <Link
@@ -25,4 +25,4 @@ const CategoriesCard = ({ icon, title }) => {
   );
 };
 
-export default CategoriesCard;
+export default FacilitiesCard;
