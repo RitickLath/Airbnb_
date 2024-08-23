@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Step1 = () => {
@@ -32,10 +33,14 @@ const Step1 = () => {
 
       {/* Buttons */}
       <div className="flex justify-between px-6 lg:px-16 mt-4 mb-6">
-        <button className="text-lg">Back</button>
-        <button className="text-lg px-8 py-2 text-white bg-black rounded-md">
-          Next
-        </button>
+        <Link href="/overview">
+          <button className="text-lg">Back</button>
+        </Link>
+        <Link href="/structure">
+          <button className="text-lg px-8 py-2 text-white bg-black rounded-md">
+            Next
+          </button>
+        </Link>
       </div>
     </div>
   );
