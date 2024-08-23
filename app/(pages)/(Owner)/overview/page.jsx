@@ -5,7 +5,7 @@ import React from "react";
 const Overview = () => {
   return (
     <div>
-      <HostNavbar />
+     
       <GettingStarted />
     </div>
   );
