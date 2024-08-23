@@ -19,7 +19,7 @@ const AddImages = () => {
           <div className="w-full bg-[#F7F7F7] flex items-center justify-center mt-8 min-w-[300px] h-[300px] border-dashed border-2 border-gray-600">
             <input
               type="file"
-              className="cursor-pointer opacity-1"
+              className="cursor-pointer opacity-1 px-4"
               onChange={(e) => {
                 // Handle file selection
                 console.log(e.target.files[0]);

@@ -15,11 +15,11 @@ const AddTitle = () => {
       <div className="px-6 pt-10 flex flex-col items-center">
         <div>
           <h1 className="text-2xl lg:text-3xl font-bold text-center">
-            Now, let's give your flat/apartment a <br /> title and description
+            Now, let's give your flat/apartment a title and description
           </h1>
           <h3 className="mt-2 text-gray-600 text-center">
-            Short title and 20-30 words description work best. <br /> Have fun
-            with it - you can always change it later.
+            Short title and 20-30 words description work best. Have fun with it
+            - you can always change it later.
           </h3>
 
           <div className="mt-6 flex flex-col space-y-6">
