@@ -54,6 +54,7 @@ model Property {
   description  String
   AboutProp    String?
   propertyType String
+  
   pricePerNight Float
   cleaningFee   Float
   ServiceFee    Float
