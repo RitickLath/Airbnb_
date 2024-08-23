@@ -2,55 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-
-// Tags and Facilities Arrays
-const tags = [
-  "Farms",
-  "Amazing Views",
-  "Treehouses",
-  "Rooms",
-  "Design",
-  "Amazing Pools",
-  "OMG",
-  "BeachFront",
-  "Tiny Homes",
-  "LakeFront",
-  "Trending",
-  "Off-the-Grid",
-  "Historical Homes",
-  "Castles",
-  "National Parks",
-  "Luxe",
-  "Lake",
-  "Mansions",
-  "Tropical",
-  "Bed and Breakfast",
-  "Countryside",
-  "Top Cities",
-  "Top of the World",
-  "Caves",
-  "Shepherd's Huts",
-  "A-Frames",
-  "Camping",
-  "Play",
-  "Boats",
-  "Deserts",
-  "Houseboats",
-  "Beach",
-];
-
-const facilities = [
-  "Pool",
-  "Parking",
-  "Washing Machine",
-  "Air Conditioning",
-  "Fireplace",
-  "TV",
-  "Barbecue",
-  "wifi",
-  "Cinema Room",
-  "Luxury Bedding",
-];
+import { tags } from "@/app/Constants/tags";
+import { facilities } from "@/app/Constants/facilities";
 
 // Style Constants
 const styles = {
