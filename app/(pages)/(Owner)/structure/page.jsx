@@ -30,7 +30,7 @@ const styles = {
   buttonContainer: "flex justify-between px-6 lg:px-16 mt-6 mb-6",
   button: "text-lg px-8 py-2 text-white bg-black rounded-md",
   backButton: "text-lg",
-  box: "w-[150px] h-[75px] sm:w-[200px] sm:h-[100px] border-2 border-gray-400 flex justify-start items-center px-4 rounded-md hover:border-black",
+  box: "w-[150px] h-[75px] sm:w-[200px] sm:h-[100px] border-2 border-gray-400 flex justify-start items-center px-4 rounded-md hover:border-black cursor-pointer",
 };
 
 const Structure = () => {
