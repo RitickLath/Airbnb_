@@ -16,7 +16,7 @@ const AddImages = () => {
             changes later
           </h3>
 
-          <div className="w-full bg-[#F7F7F7] flex items-center justify-center mt-8  min-w-[150px] h-[100px] md:min-w-[300px] md:h-[300px] border-dashed border-2 border-gray-600">
+          <div className="w-full bg-[#F7F7F7] flex items-center justify-center mt-8  min-w-[120px] h-[80px] md:min-w-[300px] md:h-[300px] border-dashed border-2 border-gray-600">
             <input
               type="file"
               className="cursor-pointer opacity-1 px-4"
