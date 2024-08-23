@@ -24,7 +24,7 @@ const places = [
 const Structure = () => {
   return (
     <div className="mx-auto pt-10 px-6 flex flex-col justify-center items-center">
-      <h1 className="text-2xl text-center">
+      <h1 className="text-2xl font-bold text-center">
         Which of these best describes your place?
       </h1>
 
