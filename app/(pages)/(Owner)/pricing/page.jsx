@@ -1,20 +1,25 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
+import { useRecoilState } from "recoil";
+import {
+  pricePerNightAtom,
+  cleaningFeeAtom,
+  serviceFeeAtom,
+} from "@/app/Store/inputStates"; // Adjust the import path as necessary
 
 const Pricing = () => {
-  // States
-  const [guestPrice, setGuestPrice] = useState("");
-  const [cleaningFee, setCleaningFee] = useState("");
-  const [serviceFee, setServiceFee] = useState("");
+  // Recoil state hooks
+  const [guestPrice, setGuestPrice] = useRecoilState(pricePerNightAtom);
+  const [cleaningFee, setCleaningFee] = useRecoilState(cleaningFeeAtom);
+  const [serviceFee, setServiceFee] = useRecoilState(serviceFeeAtom);
 
   // Determine if all fields are filled
-  const isFormComplete = true;
-
-  // guestPrice.trim() !== "" &&
-  // cleaningFee.trim() !== "" &&
-  // serviceFee.trim() !== "";
+  const isFormComplete =
+    guestPrice !== "" &&
+    cleaningFee !== "" &&
+    serviceFee !== "";
 
   // Style constants
   const styles = {
@@ -83,7 +88,7 @@ const Pricing = () => {
           <Link href="/step3">
             <button className={styles.backButton}>Back</button>
           </Link>
-          {/* Conditionally render the link based on form completion */}
+          {/* Conditionally render the button based on form completion */}
           {isFormComplete ? (
             <Link href="/publish">
               <button className={styles.nextButtonEnabled}>Publish</button>

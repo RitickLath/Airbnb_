@@ -1,14 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
+import { useRecoilState } from "recoil";
+import { titleAtom, descriptionAtom } from "@/app/Store/inputStates"; // Adjust the import path as necessary
 
 const AddTitle = () => {
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
+  const [title, setTitle] = useRecoilState(titleAtom);
+  const [description, setDescription] = useRecoilState(descriptionAtom);
 
   // Determine if both fields are filled
-  const isFormComplete = true; // title.trim() !== "" && description.trim() !== "";
+  const isFormComplete = title.trim() !== "" && description.trim() !== "";
 
   return (
     <div>
@@ -39,14 +41,14 @@ const AddTitle = () => {
           </div>
         </div>
 
-        {/* btn */}
+        {/* Buttons */}
         <div className="flex justify-between px-6 lg:px-16 mt-6 mb-6 w-full">
           <Link href="/add-images">
             <button className="text-lg text-gray-700 hover:underline">
               Back
             </button>
           </Link>
-          {/* Conditionally render the link based on form completion */}
+          {/* Conditionally render the Next button based on form completion */}
           {isFormComplete ? (
             <Link href="/step3">
               <button className="text-lg px-8 py-2 text-white bg-black rounded-md hover:bg-gray-800 transition-colors duration-200">

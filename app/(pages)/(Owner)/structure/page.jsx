@@ -1,5 +1,9 @@
+"use client";
+
+import { structureAtom } from "@/app/Store/inputStates";
 import Link from "next/link";
 import React from "react";
+import { useRecoilState } from "recoil";
 
 const places = [
   "House",
@@ -29,11 +33,17 @@ const styles = {
   gridContainer: "mt-10 grid grid-cols-2 md:grid-cols-3 gap-3",
   buttonContainer: "flex justify-between px-6 lg:px-16 mt-6 mb-6",
   button: "text-lg px-8 py-2 text-white bg-black rounded-md",
+  buttonDisabled:
+    "text-lg px-8 py-2 text-white bg-gray-400 rounded-md cursor-not-allowed",
   backButton: "text-lg",
-  box: "w-[150px] h-[75px] sm:w-[200px] sm:h-[100px] border-2 border-gray-400 flex justify-start items-center px-4 rounded-md hover:border-black cursor-pointer",
+  box: "w-[150px] h-[75px] sm:w-[200px] sm:h-[100px] border-2 flex justify-start items-center px-4 rounded-md cursor-pointer",
+  boxDefault: "border-gray-400 hover:border-black",
+  boxSelected: "border-black",
 };
 
 const Structure = () => {
+  const [structure] = useRecoilState(structureAtom);
+
   return (
     <div>
       <div className={styles.container}>
@@ -54,8 +64,13 @@ const Structure = () => {
         <Link href="/about-your-place">
           <button className={styles.backButton}>Back</button>
         </Link>
-        <Link href="/privacy-type">
-          <button className={styles.button}>Next</button>
+        <Link href={structure ? "/privacy-type" : "#"}>
+          <button
+            className={structure ? styles.button : styles.buttonDisabled}
+            disabled={!structure}
+          >
+            Next
+          </button>
         </Link>
       </div>
     </div>
@@ -66,8 +81,15 @@ export default Structure;
 
 // Box Component
 const Box = ({ title }) => {
+  const [structure, setStructure] = useRecoilState(structureAtom);
+
   return (
-    <div className={styles.box}>
+    <div
+      onClick={() => setStructure(title)}
+      className={`${styles.box} ${
+        structure === title ? styles.boxSelected : styles.boxDefault
+      }`}
+    >
       <h1>{title}</h1>
     </div>
   );

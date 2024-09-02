@@ -52,16 +52,16 @@ model Property {
 
   title        String
   description  String
-  AboutProp    String?
-  propertyType String
+
+  privacyType    String
+  structure String
   
   pricePerNight Float
   cleaningFee   Float
   ServiceFee    Float
 
-  category      String[]
-  tags          String[]
-  facilities    String[]
+  category      String[]  // amenities -> standout
+  facilities    String[]  // amenities -> fav
   
   images       String[]
   

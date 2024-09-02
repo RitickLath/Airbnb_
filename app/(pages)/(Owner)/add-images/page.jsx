@@ -2,8 +2,18 @@
 
 import Link from "next/link";
 import React from "react";
+import { useRecoilState } from "recoil";
+import { imagesAtom } from "@/app/Store/inputStates"; // Adjust the import path as necessary
 
 const AddImages = () => {
+  const [images, setImages] = useRecoilState(imagesAtom);
+
+  const handleFileChange = (e) => {
+    const files = Array.from(e.target.files);
+    setImages((prevImages) => [...prevImages, ...files]);
+    console.log(files); // Debugging purposes, can be removed
+  };
+
   return (
     <div>
       <div className="px-6 pt-10 flex flex-col items-center">
@@ -12,18 +22,16 @@ const AddImages = () => {
             Add some photos of your flat/apartment
           </h1>
           <h3 className="mt-2 text-gray-600">
-            You'll need atleast 1 photo to get started. You can add more or make
-            changes later
+            You'll need at least 1 photo to get started. You can add more or
+            make changes later.
           </h3>
 
-          <div className="w-full bg-[#F7F7F7] flex items-center justify-center mt-8  min-w-[120px] h-[120px] md:min-w-[300px] md:h-[300px] border-dashed border-2 border-gray-600">
+          <div className="w-full bg-[#F7F7F7] flex items-center justify-center mt-8 min-w-[120px] h-[120px] md:min-w-[300px] md:h-[300px] border-dashed border-2 border-gray-600">
             <input
               type="file"
               className="cursor-pointer opacity-1 px-4"
-              onChange={(e) => {
-                // Handle file selection
-                console.log(e.target.files[0]);
-              }}
+              onChange={handleFileChange}
+              multiple
             />
           </div>
         </div>

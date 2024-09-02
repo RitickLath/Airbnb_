@@ -1,7 +1,17 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
+import { useRecoilState } from "recoil";
+import {
+  addressAtom,
+  cityAtom,
+  stateAtom,
+  countryAtom,
+  postalCodeAtom,
+  latitudeAtom,
+  longitudeAtom,
+} from "@/app/Store/inputStates";
 
 // Style constants
 const styles = {
@@ -21,14 +31,14 @@ const styles = {
 };
 
 const Location = () => {
-  // State variables for each form input
-  const [address, setAddress] = useState("");
-  const [city, setCity] = useState("");
-  const [state, setState] = useState("");
-  const [country, setCountry] = useState("");
-  const [postalCode, setPostalCode] = useState("");
-  const [longitude, setLongitude] = useState("");
-  const [latitude, setLatitude] = useState("");
+  // Recoil states for each form input
+  const [address, setAddress] = useRecoilState(addressAtom);
+  const [city, setCity] = useRecoilState(cityAtom);
+  const [state, setState] = useRecoilState(stateAtom);
+  const [country, setCountry] = useRecoilState(countryAtom);
+  const [postalCode, setPostalCode] = useRecoilState(postalCodeAtom);
+  const [longitude, setLongitude] = useRecoilState(longitudeAtom);
+  const [latitude, setLatitude] = useRecoilState(latitudeAtom);
 
   return (
     <div>

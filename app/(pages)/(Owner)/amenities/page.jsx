@@ -1,7 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
+import { useRecoilState } from "recoil";
+import { facilitiesAtom, categoryAtom } from "@/app/Store/inputStates";
 import { tags } from "@/app/Constants/tags";
 import { facilities } from "@/app/Constants/facilities";
 
@@ -21,13 +23,15 @@ const styles = {
 };
 
 const Amenities = () => {
-  const [selectedTags, setSelectedTags] = useState([]);
-  const [selectedFacilities, setSelectedFacilities] = useState([]);
+  const [selectedFacilities, setSelectedFacilities] =
+    useRecoilState(facilitiesAtom);
+  const [selectedTags, setSelectedTags] = useRecoilState(categoryAtom);
 
   const toggleSelection = (item, type) => {
     const setSelection =
-      type === "tag" ? setSelectedTags : setSelectedFacilities;
-    const currentSelection = type === "tag" ? selectedTags : selectedFacilities;
+      type === "facility" ? setSelectedFacilities : setSelectedTags;
+    const currentSelection =
+      type === "facility" ? selectedFacilities : selectedTags;
 
     if (currentSelection.includes(item)) {
       setSelection(currentSelection.filter((i) => i !== item));
@@ -69,7 +73,6 @@ const Amenities = () => {
             </h1>
             <div className={styles.grid}>
               {tags.map((tag, i) => (
-                // isSelected for style of border
                 <Box
                   key={i}
                   title={tag}
